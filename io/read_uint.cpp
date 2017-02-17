@@ -1,11 +1,11 @@
 typedef unsigned int uint_t;
 
-uint_t read_uint()
+static uint_t read_uint()
 {
 	const uint_t D = 10;
 	uint_t u = 0;
 	do {
-		c = getchar_unlocked();
+		int c = getchar_unlocked();
 		assert (0 <= c);
 		u = c - '0';
 	} while (D <= u);
